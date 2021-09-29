@@ -39,7 +39,10 @@ class List: UIViewController {
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0)
         ])
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let alert = UIAlertController(title: "Instructions", message: "To reproduce the bug, first reorder some cells in the second section, then reorder some cells in the first section.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
