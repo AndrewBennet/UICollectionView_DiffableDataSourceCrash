@@ -7,32 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49C939A526F9240100F99D64 /* diffable_experimentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9399526F923FE00F99D64 /* diffable_experimentsApp.swift */; };
-		49C939A626F9240100F99D64 /* diffable_experimentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9399526F923FE00F99D64 /* diffable_experimentsApp.swift */; };
-		49C939A726F9240100F99D64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9399626F923FE00F99D64 /* ContentView.swift */; };
-		49C939A826F9240100F99D64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9399626F923FE00F99D64 /* ContentView.swift */; };
-		49C939A926F9240100F99D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C9399726F9240000F99D64 /* Assets.xcassets */; };
-		49C939AA26F9240100F99D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C9399726F9240000F99D64 /* Assets.xcassets */; };
+		49C939C026F9242E00F99D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C939BF26F9242E00F99D64 /* AppDelegate.swift */; };
+		49C939C226F9242E00F99D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C939C126F9242E00F99D64 /* SceneDelegate.swift */; };
+		49C939C426F9242E00F99D64 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C939C326F9242E00F99D64 /* List.swift */; };
+		49C939C726F9242E00F99D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C939C526F9242E00F99D64 /* Main.storyboard */; };
+		49C939CC26F9243000F99D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C939CA26F9243000F99D64 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49C9399526F923FE00F99D64 /* diffable_experimentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diffable_experimentsApp.swift; sourceTree = "<group>"; };
-		49C9399626F923FE00F99D64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		49C9399726F9240000F99D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49C9399C26F9240100F99D64 /* diffable-experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diffable-experiments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49C939A226F9240100F99D64 /* diffable-experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diffable-experiments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49C939A426F9240100F99D64 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		49C939BC26F9242E00F99D64 /* diffable-experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diffable-experiments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C939BF26F9242E00F99D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49C939C126F9242E00F99D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49C939C326F9242E00F99D64 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		49C939C626F9242E00F99D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49C939CB26F9243000F99D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49C939CD26F9243000F99D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49C9399926F9240100F99D64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49C9399F26F9240100F99D64 /* Frameworks */ = {
+		49C939B926F9242E00F99D64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,98 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49C9398F26F923FE00F99D64 = {
+		49C939B326F9242E00F99D64 = {
 			isa = PBXGroup;
 			children = (
-				49C9399426F923FE00F99D64 /* Shared */,
-				49C939A326F9240100F99D64 /* macOS */,
-				49C9399D26F9240100F99D64 /* Products */,
+				49C939BE26F9242E00F99D64 /* diffable-experiments */,
+				49C939BD26F9242E00F99D64 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		49C9399426F923FE00F99D64 /* Shared */ = {
+		49C939BD26F9242E00F99D64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49C9399526F923FE00F99D64 /* diffable_experimentsApp.swift */,
-				49C9399626F923FE00F99D64 /* ContentView.swift */,
-				49C9399726F9240000F99D64 /* Assets.xcassets */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		49C9399D26F9240100F99D64 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				49C9399C26F9240100F99D64 /* diffable-experiments.app */,
-				49C939A226F9240100F99D64 /* diffable-experiments.app */,
+				49C939BC26F9242E00F99D64 /* diffable-experiments.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49C939A326F9240100F99D64 /* macOS */ = {
+		49C939BE26F9242E00F99D64 /* diffable-experiments */ = {
 			isa = PBXGroup;
 			children = (
-				49C939A426F9240100F99D64 /* macOS.entitlements */,
+				49C939BF26F9242E00F99D64 /* AppDelegate.swift */,
+				49C939C126F9242E00F99D64 /* SceneDelegate.swift */,
+				49C939C326F9242E00F99D64 /* List.swift */,
+				49C939C526F9242E00F99D64 /* Main.storyboard */,
+				49C939CA26F9243000F99D64 /* LaunchScreen.storyboard */,
+				49C939CD26F9243000F99D64 /* Info.plist */,
 			);
-			path = macOS;
+			path = "diffable-experiments";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49C9399B26F9240100F99D64 /* diffable-experiments (iOS) */ = {
+		49C939BB26F9242E00F99D64 /* diffable-experiments */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49C939AD26F9240100F99D64 /* Build configuration list for PBXNativeTarget "diffable-experiments (iOS)" */;
+			buildConfigurationList = 49C939D026F9243000F99D64 /* Build configuration list for PBXNativeTarget "diffable-experiments" */;
 			buildPhases = (
-				49C9399826F9240100F99D64 /* Sources */,
-				49C9399926F9240100F99D64 /* Frameworks */,
-				49C9399A26F9240100F99D64 /* Resources */,
+				49C939B826F9242E00F99D64 /* Sources */,
+				49C939B926F9242E00F99D64 /* Frameworks */,
+				49C939BA26F9242E00F99D64 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "diffable-experiments (iOS)";
-			productName = "diffable-experiments (iOS)";
-			productReference = 49C9399C26F9240100F99D64 /* diffable-experiments.app */;
-			productType = "com.apple.product-type.application";
-		};
-		49C939A126F9240100F99D64 /* diffable-experiments (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49C939B026F9240100F99D64 /* Build configuration list for PBXNativeTarget "diffable-experiments (macOS)" */;
-			buildPhases = (
-				49C9399E26F9240100F99D64 /* Sources */,
-				49C9399F26F9240100F99D64 /* Frameworks */,
-				49C939A026F9240100F99D64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "diffable-experiments (macOS)";
-			productName = "diffable-experiments (macOS)";
-			productReference = 49C939A226F9240100F99D64 /* diffable-experiments.app */;
+			name = "diffable-experiments";
+			productName = "diffable-experiments";
+			productReference = 49C939BC26F9242E00F99D64 /* diffable-experiments.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		49C9399026F923FE00F99D64 /* Project object */ = {
+		49C939B426F9242E00F99D64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					49C9399B26F9240100F99D64 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					49C939A126F9240100F99D64 = {
+					49C939BB26F9242E00F99D64 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 49C9399326F923FE00F99D64 /* Build configuration list for PBXProject "diffable-experiments" */;
+			buildConfigurationList = 49C939B726F9242E00F99D64 /* Build configuration list for PBXProject "diffable-experiments" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,59 +107,62 @@
 				en,
 				Base,
 			);
-			mainGroup = 49C9398F26F923FE00F99D64;
-			productRefGroup = 49C9399D26F9240100F99D64 /* Products */;
+			mainGroup = 49C939B326F9242E00F99D64;
+			productRefGroup = 49C939BD26F9242E00F99D64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49C9399B26F9240100F99D64 /* diffable-experiments (iOS) */,
-				49C939A126F9240100F99D64 /* diffable-experiments (macOS) */,
+				49C939BB26F9242E00F99D64 /* diffable-experiments */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		49C9399A26F9240100F99D64 /* Resources */ = {
+		49C939BA26F9242E00F99D64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C939A926F9240100F99D64 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49C939A026F9240100F99D64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49C939AA26F9240100F99D64 /* Assets.xcassets in Resources */,
+				49C939CC26F9243000F99D64 /* LaunchScreen.storyboard in Resources */,
+				49C939C726F9242E00F99D64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		49C9399826F9240100F99D64 /* Sources */ = {
+		49C939B826F9242E00F99D64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C939A726F9240100F99D64 /* ContentView.swift in Sources */,
-				49C939A526F9240100F99D64 /* diffable_experimentsApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49C9399E26F9240100F99D64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49C939A826F9240100F99D64 /* ContentView.swift in Sources */,
-				49C939A626F9240100F99D64 /* diffable_experimentsApp.swift in Sources */,
+				49C939C426F9242E00F99D64 /* List.swift in Sources */,
+				49C939C026F9242E00F99D64 /* AppDelegate.swift in Sources */,
+				49C939C226F9242E00F99D64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		49C939C526F9242E00F99D64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C939C626F9242E00F99D64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49C939CA26F9243000F99D64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C939CB26F9243000F99D64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		49C939AB26F9240100F99D64 /* Debug */ = {
+		49C939CE26F9243000F99D64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,15 +213,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		49C939AC26F9240100F99D64 /* Release */ = {
+		49C939CF26F9243000F99D64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,161 +268,94 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		49C939AE26F9240100F99D64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YPDEV2E775;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewbennet.diffable-experiments";
-				PRODUCT_NAME = "diffable-experiments";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		49C939AF26F9240100F99D64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YPDEV2E775;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewbennet.diffable-experiments";
-				PRODUCT_NAME = "diffable-experiments";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		49C939B126F9240100F99D64 /* Debug */ = {
+		49C939D126F9243000F99D64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YPDEV2E775;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = "diffable-experiments/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewbennet.diffable-experiments";
-				PRODUCT_NAME = "diffable-experiments";
-				SDKROOT = macosx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		49C939B226F9240100F99D64 /* Release */ = {
+		49C939D226F9243000F99D64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YPDEV2E775;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = "diffable-experiments/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewbennet.diffable-experiments";
-				PRODUCT_NAME = "diffable-experiments";
-				SDKROOT = macosx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49C9399326F923FE00F99D64 /* Build configuration list for PBXProject "diffable-experiments" */ = {
+		49C939B726F9242E00F99D64 /* Build configuration list for PBXProject "diffable-experiments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49C939AB26F9240100F99D64 /* Debug */,
-				49C939AC26F9240100F99D64 /* Release */,
+				49C939CE26F9243000F99D64 /* Debug */,
+				49C939CF26F9243000F99D64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49C939AD26F9240100F99D64 /* Build configuration list for PBXNativeTarget "diffable-experiments (iOS)" */ = {
+		49C939D026F9243000F99D64 /* Build configuration list for PBXNativeTarget "diffable-experiments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49C939AE26F9240100F99D64 /* Debug */,
-				49C939AF26F9240100F99D64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49C939B026F9240100F99D64 /* Build configuration list for PBXNativeTarget "diffable-experiments (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49C939B126F9240100F99D64 /* Debug */,
-				49C939B226F9240100F99D64 /* Release */,
+				49C939D126F9243000F99D64 /* Debug */,
+				49C939D226F9243000F99D64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 49C9399026F923FE00F99D64 /* Project object */;
+	rootObject = 49C939B426F9242E00F99D64 /* Project object */;
 }
