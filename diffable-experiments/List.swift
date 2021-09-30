@@ -30,6 +30,11 @@ class List: UIViewController {
         }
         dataSource.apply(initialSnapshot, animatingDifferences: false)
 
+        // Then apply a section snapshot
+        var sectionSnapshot = NSDiffableDataSourceSectionSnapshot<UUID>()
+        sectionSnapshot.append(initialSnapshot.itemIdentifiers(inSection: .sectionTwo))
+        self.dataSource.apply(sectionSnapshot, to: .sectionTwo)
+
         // Stick the collection view on screen
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +48,7 @@ class List: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let alert = UIAlertController(title: "Instructions", message: "To reproduce the bug, first reorder some cells in the second section, then reorder some cells in the first section.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Instructions", message: "To reproduce the bug, reorder some cells in the first section.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }
@@ -63,19 +68,6 @@ class List: UIViewController {
             view.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
         }
         dataSource.reorderingHandlers.canReorderItem = { _ in true }
-        dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
-            guard let self = self else { return }
-            for section in transaction.sectionTransactions.map(\.sectionIdentifier) {
-                let items = transaction.finalSnapshot.itemIdentifiers(inSection: section)
-
-                DispatchQueue.main.async {
-                    var sectionSnapshot = NSDiffableDataSourceSectionSnapshot<UUID>()
-                    sectionSnapshot.append(items)
-                    self.dataSource.apply(sectionSnapshot, to: section)
-                }
-            }
-        }
-        
         return dataSource
     }
 }
